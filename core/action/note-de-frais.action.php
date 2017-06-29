@@ -69,9 +69,8 @@ class Note_De_Frais_Action {
 	 * @version 6.2.7.0
 	 */
 	public function callback_admin_enqueue_scripts_js() {
-		// wp_enqueue_script( 'digi-script', PLUGIN_DIGIRISK_URL . 'core/assets/js/backend.min.js', array(), \eoxia\Config_Util::$init['digirisk']->version, false );
-		// wp_enqueue_script( 'digi-script-owl-carousel', PLUGIN_DIGIRISK_URL . 'core/assets/js/owl.carousel.min.js', array(), \eoxia\Config_Util::$init['digirisk']->version, false );
-		// wp_enqueue_script( 'digi-script-datetimepicker-script', PLUGIN_DIGIRISK_URL . 'core/assets/js/jquery.datetimepicker.full.js', array(), \eoxia\Config_Util::$init['digirisk']->version );
+		wp_enqueue_script( 'note-de-frais-script', PLUGIN_NOTE_DE_FRAIS_URL . 'core/assets/js/backend.min.js', array(), \eoxia\Config_Util::$init['note-de-frais']->version, false );
+		wp_enqueue_script( 'note-de-frais-script-datetimepicker-script', PLUGIN_NOTE_DE_FRAIS_URL . 'core/assets/js/jquery.datetimepicker.full.js', array(), \eoxia\Config_Util::$init['note-de-frais']->version );
 	}
 
 	/**
@@ -83,7 +82,7 @@ class Note_De_Frais_Action {
 	 * @version 6.2.5.0
 	 */
 	public function callback_admin_print_scripts_js() {
-		require( PLUGIN_DIGIRISK_PATH . '/core/assets/js/define-string.js.php' );
+		// require( PLUGIN_DIGIRISK_PATH . '/core/assets/js/define-string.js.php' );
 	}
 
 	/**
@@ -106,11 +105,10 @@ class Note_De_Frais_Action {
 	 * @version 6.2.7.0
 	 */
 	public function callback_admin_enqueue_scripts_css() {
-		// wp_register_style( 'digi-style', PLUGIN_DIGIRISK_URL . 'core/assets/css/style.min.css', array(), \eoxia\Config_Util::$init['digirisk']->version );
-		// wp_enqueue_style( 'digi-style' );
-		//
-		// wp_enqueue_style( 'digi-datepicker', PLUGIN_DIGIRISK_URL . 'core/assets/css/jquery.datetimepicker.css', array(), \eoxia\Config_Util::$init['digirisk']->version );
-		// wp_enqueue_style( 'digi-owl-carousel', PLUGIN_DIGIRISK_URL . 'core/assets/css/owl.carousel.min.css', array(), \eoxia\Config_Util::$init['digirisk']->version );
+		wp_register_style( 'note-de-frais-style', PLUGIN_NOTE_DE_FRAIS_URL . 'core/assets/css/style.min.css', array(), \eoxia\Config_Util::$init['note-de-frais']->version );
+		wp_enqueue_style( 'note-de-frais-style' );
+
+		wp_enqueue_style( 'note-de-frais-datepicker', PLUGIN_NOTE_DE_FRAIS_URL . 'core/assets/css/jquery.datetimepicker.css', array(), \eoxia\Config_Util::$init['note-de-frais']->version );
 	}
 
 	/**
