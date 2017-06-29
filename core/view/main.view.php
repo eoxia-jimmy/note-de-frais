@@ -1,21 +1,15 @@
 <?php
 /**
  * Vue principale de l'application
- * Utilises deux shortcodes
- * digi_navigation: Pour la navigation dans les groupements et les unités de travail
- * digi_content: Pour le contenu de l'application
  *
- * @package Evarisk\Plugin
+ * @package Eoxia\Plugin
  *
- * @since 0.1
- * @version 6.2.4.0
+ * @since 1.0.0.0
+ * @version 1.0.0.0
  */
 
 namespace note_de_frais;
 
 if ( ! defined( 'ABSPATH' ) ) {	exit; } ?>
 
-<div class="digirisk-wrap" style="clear: both;">
-	<?php do_shortcode( '[digi_navigation id="' . $id . '"]' ); ?>
-	<?php do_shortcode( '[digi_content id="' . $id . '"]' ); ?>
-</div>
+caca
