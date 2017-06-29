@@ -17,5 +17,9 @@
 		"modules/group-ndf/group-ndf.config.json",
 		"modules/ndf/ndf.config.json"
 	],
-	"debug": true
+	"debug": true,
+	"categories": [
+		"Trajet",
+		"Autres"
+	]
 }

@@ -5,7 +5,7 @@ if ( ! window.eoxiaJS ) {
 	window.eoxiaJS.scriptsLoaded = false;
 }
 
-window.eoxiaJS.digirisk = {};
+window.eoxiaJS.noteDeFrais = {};
 
 if ( ! window.eoxiaJS.scriptsLoaded ) {
 	window.eoxiaJS.init = function() {
