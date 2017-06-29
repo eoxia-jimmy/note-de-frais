@@ -59,7 +59,7 @@ class Group_NDF_Class extends \eoxia\Post_Class {
 	 *
 	 * @var array
 	 */
-	protected $after_get_function = array();
+	protected $after_get_function = array( '\note_de_frais\get_full_group' );
 
 	/**
 	 * Le nom pour le resgister post type
@@ -67,6 +67,22 @@ class Group_NDF_Class extends \eoxia\Post_Class {
 	 * @var string
 	 */
 	protected $post_type_name = 'Groupe NDF';
+
+	/**
+	 * Récupères les groupes NDF et les envoies à la vue principale.
+	 *
+	 * @return void
+	 *
+	 * @since 1.0.0.0
+	 * @version 1.0.0.0
+	 */
+	public function display() {
+		$groups_ndf = $this->get();
+
+		\eoxia\View_Util::exec( 'note-de-frais', 'group-ndf', 'main', array(
+			'groups_ndf' => $groups_ndf,
+		) );
+	}
 }
 
 Group_NDF_Class::g();

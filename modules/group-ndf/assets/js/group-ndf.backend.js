@@ -15,4 +15,4 @@ window.eoxiaJS.noteDeFrais.groupNDF = {};
  * @since 1.0.0.0
  * @version 1.0.0.0
  */
-window.eoxiaJS.noteDeFrais.groupNDF.init = function() { alert('ok'); };
+window.eoxiaJS.noteDeFrais.groupNDF.init = function() {};

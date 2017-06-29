@@ -17,4 +17,8 @@ if ( ! defined( 'ABSPATH' ) ) { exit; }
 /**
  * Définition du modèle de group ndf
  */
-class Group_NDF_Model extends \eoxia\Post_Model {}
+class Group_NDF_Model extends \eoxia\Post_Model {
+	public function __construct( $data ) {
+		parent::__construct( $data );
+	}
+}
