@@ -1,0 +1,18 @@
+{
+	"name": "Note de frais",
+	"slug": "note-de-frais",
+	"version": "1.0.0.0",
+	"description": "L'application Note de frais",
+	"insert_scripts_pages_js": [
+	],
+	"insert_scripts_pages_css": [
+	],
+	"externals": [
+		"core/external/wpeo_log/wpeo_log.config.json",
+		"core/external/wpeo_model/wpeo_model.config.json"
+	],
+	"modules": [
+		"core/core.config.json"
+	],
+	"debug": false
+}
